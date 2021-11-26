@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - bun_ex1</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    
+ 
+
+</head>
+<body style="background-color: #ffcc00;">
+    <header>
+<nav class="navbleftight navbar-expand-md navbar-toggleable-md justify-content-between " style="background-color: #ffcc00;">
+    <div class="container">
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+         <ul class="nav navbar-nav" style="font-size:20px; margin-right:auto;">
+          
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Privacy" href="~\bun-ex1\Views\Home\Index.cshtml" style="margin-right:unset; margin-right:2vw; font-weight:700; color:#006A79;" >Produse</a>
+                        </li>
+                 <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy" href="~\bun-ex1\Views\Home\Index.cshtml" style="margin-right:unset; margin-right:2vw; font-weight:700; color:#006A79;">Promotii</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy" href="~\bun-ex1\Views\Home\Index.cshtml" style="margin-right:unset; margin-right:2vw; font-weight:700; color:#006A79;">Producatori</a>
+                        </li>
+        </ul>
+        <ul class="nav navbar-nav mx-auto ">
+            <li class="nav-item">
+                <button type="button" class="btn btn-outline"><img  src="~/sigla_chorus.jpg" alt="chorusLogo" id="logo" style=" width: 7vw; height:3vw; display: block; margin-left: auto; margin-right: auto; "/>  </button>
+                                  </li>
+              
+        </ul>
+        <ul class="nav navbar-nav" style="font-size:20px; margin-left:auto;">
+            <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy" href="~\bun-ex1\Views\Home\Index.cshtml" style="margin-right:unset; margin-right:2vw;font-weight:700; color:#006A79;">Clienti</a>
+                        </li>
+                 <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy" href="~\bun-ex1\Views\Home\Index.cshtml" style="margin-right:unset; margin-right:2vw;font-weight:700; color:#006A79;">Cariere</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy" href="~\bun-ex1\Views\Home\Index.cshtml" style="margin-right:unset; margin-right:2vw;font-weight:700; color:#006A79;">Despre</a>
+                        </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+    </header>
+    <div class="containerBody" >
+        <main role="main" class="pb-3">
+         @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" style="background-color: #ffcc00;">
+        <div class="container" >
+            &copy; 2021 - bun_ex1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
