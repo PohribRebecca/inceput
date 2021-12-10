@@ -1,37 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap');
 
-
-@media (min-width: 768px) {
-  
- .header
-  {
-      font-size:10px;
-  }
-}
+ 
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
-body {
-  margin-bottom: 60px;
-}
+
 .containerIndex {
     height: 100vh;
-    background-image: url('https://images.pexels.com/photos/1495580/pexels-photo-1495580.jpeg?cs=srgb&dl=pexels-eric-anada-1495580.jpg&fm=jpg');
+   background-image: url('https://images.pexels.com/photos/1495580/pexels-photo-1495580.jpeg?cs=srgb&dl=pexels-eric-anada-1495580.jpg&fm=jpg');
     background-size: cover;
 
 }
+@media (min-width: 1200px) and (max-width: 1300px) {
 
-    .containerIndex #anunt {
-        font-size: 20px;
-        font-family: 'Palatino Linotype';
-        font-weight: 600;
-        color: #364954;
-        position: relative;
-        margin-left: 40vw;
-        margin-right: 10vw;
-        padding-top: 30vh;
+    .nav-link{
+        font-size:small;
     }
+}
 
 

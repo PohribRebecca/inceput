@@ -7,65 +7,189 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     
- 
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
 
+    
 </head>
-<body style="background-color: #ffcc00;">
+
+<body>
+   
     <header>
-<nav class="navbleftight navbar-expand-md navbar-toggleable-md justify-content-between " style="background-color: #ffcc00;">
-    <div class="container">
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+          <nav class="navbar navbar-expand-xl navbar-light " style=" background-color:#f2fcff;   font-size:large;  box-shadow: 0 0 10px 1px #f2fcff ;">
+
+                <a class="navbar-brand" href="#"><img  src="/Photos/chrosu logo transparent.png" alt="chorusLogo" id="logo" style=" width: 12vw; height:3.5vw;"/> </a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                          <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-         <ul class="nav navbar-nav" style="font-size:20px; margin-right:auto;">
+
+<div class="collapse navbar-collapse" id="navbar" style="color:#335175;">
+<ul class="nav navbar-nav" >
           
-                        <li class="nav-item">
-                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Privacy" href="~\bun-ex1\Views\Home\Index.cshtml" style="margin-right:unset; margin-right:2vw; font-weight:700; color:#006A79;" >Produse</a>
-                        </li>
-                 <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy" href="~\bun-ex1\Views\Home\Index.cshtml" style="margin-right:unset; margin-right:2vw; font-weight:700; color:#006A79;">Promotii</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy" href="~\bun-ex1\Views\Home\Index.cshtml" style="margin-right:unset; margin-right:2vw; font-weight:700; color:#006A79;">Producatori</a>
-                        </li>
-        </ul>
-        <ul class="nav navbar-nav mx-auto ">
-            <li class="nav-item">
-                <button type="button" class="btn btn-outline"><img  src="~/sigla_chorus.jpg" alt="chorusLogo" id="logo" style=" width: 7vw; height:3vw; display: block; margin-left: auto; margin-right: auto; "/>  </button>
-                                  </li>
-              
-        </ul>
-        <ul class="nav navbar-nav" style="font-size:20px; margin-left:auto;">
-            <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy" href="~\bun-ex1\Views\Home\Index.cshtml" style="margin-right:unset; margin-right:2vw;font-weight:700; color:#006A79;">Clienti</a>
-                        </li>
-                 <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy" href="~\bun-ex1\Views\Home\Index.cshtml" style="margin-right:unset; margin-right:2vw;font-weight:700; color:#006A79;">Cariere</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy" href="~\bun-ex1\Views\Home\Index.cshtml" style="margin-right:unset; margin-right:2vw;font-weight:700; color:#006A79;">Despre</a>
-                        </li>
-        </ul>
-        </div>
-    </div>
-</nav>
-    </header>
-    <div class="containerBody" >
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbar" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#335175;" >
+            Produse
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" >
+            <li><a class="dropdown-item" href="#" >Aparate electrice</a></li>
+            <li><a class="dropdown-item" href="#">Actionari electrice</a></li>
+            <li><a class="dropdown-item" href="#">Automatizari</a></li>
+            <li><a class="dropdown-item" href="#">Protectie</a></li>
+            <li><a class="dropdown-item" href="#">Masura si control</a></li>
+            <li><a class="dropdown-item" href="#">Masini electrice</a></li>
+            <li><a class="dropdown-item" href="#">Aparataj ultraterminal</a></li>
+            <li><a class="dropdown-item" href="#">Iluminat</a></li>
+            <li><a class="dropdown-item" href="#">Cabluri si stalpi</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" style="color:#BD5F40;">Promotii</a></li>
+          </ul>
+          </li>
+     
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#335175;">
+            Producatori
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+               <li><a class="dropdown-item" href="#">Parteneri</a></li>
+            <li><a class="dropdown-item" href="#">Cataloage</a></li>
+            <li><a class="dropdown-item" href="#">Informatii</a></li>
+            </ul>
+            </li>
+
+                       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#335175;">
+   Clienti
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#" >Feedback</a></li>
+            <li><a class="dropdown-item" href="#">Informatii utile</a></li>
+            <li><a class="dropdown-item" href="#">Link-uri utile</a></li>
+            </ul>
+            </li>
+ 
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#335175;">
+            Despre noi
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+               <li><a class="dropdown-item" href="#">Lucrarile noastre</a></li>
+            <li><a class="dropdown-item" href="#">Cultura Chorus</a></li>
+          </ul>
+          </li>
+
+        <li class="nav-item" >
+          <a class="nav-link" href="#" style="color:#335175;">
+            Contul meu
+          </a>        
+          </li>
+
+                
+       <li class="nav-item">
+          <a class="nav-link" href="#" style="color:#335175;">
+           Cariere
+          </a>
+          </li>
+
+          <li class="nav-item ">
+          <a class="nav-link" href="#" style="color:#335175;">
+            Contact
+          </a>
+          </li>      
+   
+
+      
+       
+
+</ul></div></nav></header>
+
+
+<div class="containerBody" >
         <main role="main" class="pb-3">
          @RenderBody()
         </main>
-    </div>
-
-    <footer class="border-top footer text-muted" style="background-color: #ffcc00;">
-        <div class="container" >
-            &copy; 2021 - bun_ex1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+
+    
+
+<footer class="border-top footer text-muted" style="background-color: #ffcc00;">
+    <div class="container" >
+            &copy; 2021 - bun_ex1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+</footer>
+    
+
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+@await RenderSectionAsync("Scripts", required: false)
+
+<style>
+
+   .dropdown-menu .dropdown-item{
+     color:#335175;
+     -webkit-text-stroke:unset;
+     text-shadow:unset;
+     padding-top:20px;
+     
+   }
+
+
+    .dropdown:hover .dropdown-menu{
+        display: block;
+        background-color:#f2fcff;
+        border:thin;
+         transition: 0.1s ease-in;
+
+       
+    }
+    .dropdown:hover .dropdown-menu .dropdown-item:hover{
+        color:#77a9e6;   
+       transition: 0.1s ease-in;
+        font-size: 15px; 
+       
+
+    }
+    .dropdown-menu{
+        margin-top: 0;   
+        box-shadow: 0 0 10px 1px;
+    }
+    .nav-link:hover{
+        color:#77a9e6;   
+        transition: 0.1s ease-in-out;
+        font-size: 17px; 
+    }
+
+    li {
+    margin-right: 50px;
+    }
+
+</style>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(function(){
+        var dropdownMenu = $(this).children(".dropdown-menu");
+        if(dropdownMenu.is(":visible")){
+            dropdownMenu.parent().toggleClass("open");
+        }
+    });
+});     
+</script>
+<script>
+       
+    $('.dropdown').mouseenter(function(){
+    if(!$('.navbar-toggle').is(':visible')) { // disable for mobile view
+        if(!$(this).hasClass('open')) { // Keeps it open when hover it again
+            $('.dropdown-toggle', this).trigger('click');
+        }
+    }
+});;
+ 
+  </script>
+
+
 </body>
 </html>
+
