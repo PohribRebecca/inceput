@@ -6,52 +6,29 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
   <link rel="stylesheet" href="~/css/indexPage.css" asp-append-version="true" />
-
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+   
     </head> 
 
 <body> 
-    <div class="containerIndex">
-       <h1><span>Vizitati-ne ofertele chiar acum!</span></h1>
-      
+    <div id="carouselExampleDark" class="carousel carousel-fade" data-bs-ride="carousel" style="position:absolute; margin:auto; background-color: #9cd7f2; ">
 
- 
- <div class="circle">
-  <p class="circle-content">
-      <br />
-      Solicitati acum o oferta de pret personalizata, contactand reprezentantii nostri din filiale!
-      <br /> 
-      <br /> 
-      <br /> 
-      <a href="/buttons/54">
-  <button class="bn54">
-    <span class="bn54span">Vezi catalog</span>
-  </button>
-</a>
-      <br /><br />
-     
-  </p>
-</div>
-@*  <div id="carouselExampleDark" class="carousel carousel-fade" data-bs-ride="carousel" style="position:relative; float:right;  margin-right: 15vw; ">
 
   <div class="carousel-inner" >
-    <div class="carousel-item active" data-bs-interval="3000" style="width:300px; height:300px;">
-      <img src="~/Photos/ex1.jpg" class="d-block " alt="ex1"style="width:300px; height:300px; opacity: 0.8;">
-      <div class="carousel-caption d-inline p-1 bg-dark bg-opacity-75 text-light" > 
-        <p style="padding-top:10px;"> Product Name</p>
-      </div>
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="~/Photos/bec1.jpg" class="d-block " alt="ex1" style="width:100vw; height:500px; ">
+     
     </div>
-    <div class="carousel-item" data-bs-interval="3000" style="width:300px; height:300px;">
-      <img src="~/Photos/ex2.jpg" class="d-block "alt="ex2"style="width:300px; height:300px;opacity: 0.8;" >  
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="~/Photos/bec2.jpg" class="d-block "alt="ex2" style="width:100vw; height:500px; " >  
 
-       <div class="carousel-caption d-inline p-1 bg-dark bg-opacity-75 text-light  " >
-        <p style="padding-top:10px;">Product Name</p>
-      </div>
+       
     </div>
-    <div class="carousel-item" data-bs-interval="3000" style="width:300px; height:300px;" >
-      <img src="~/Photos/ex3.jpg" class="d-block " alt="ex3"style="width:300px; height:300px;opacity: 0.8;">
-      <div class="carousel-caption d-inline p-1 bg-dark bg-opacity-75 text-light   " >
-        <p style="padding-top:10px;">Product Name</p>
-      </div>
+    <div class="carousel-item" data-bs-interval="3000"  >
+      <img src="~/Photos/bec3.jpg" class="d-block " alt="ex3"style="width:100vw; height:500px; ">    
+      
     </div>
   </div>
 
@@ -63,20 +40,59 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
   
   </button>
-</div>  
-    </div>
-*@
+ 
+ <div class="containerIndex">
+
+     <div class="content" style="margin-top:30px;">
+<h1><span class="text">Vizitati-ne ofertele chiar acum!</span></h1>
+</div>
    
+<div class="boxes" style="margin-top:30px;">
+    <div class="box"> Peste 50.000 de echipamente electrice! </div>
+    <div class="box">Acoperire nationala</div>
+    <div class="box">Contacteaza-ne</div>
+
+</div>
+
+@*
+<div class="circle">
+  <p class="circle-content">
+      <br />
+      Peste 50.000 de echipamente si acoperire nationala!
+      <br /> <br /> 
+
+  <a href="/buttons/54">
+  <button class="bn54">
+    <span class="bn54span">Vezi catalog</span>
+  </button>
+</a>
+      <br /><br />
+</p>
+</div>
+
+
+
+*@
+
+
+
+ 
+</div>
+</div> 
     
 </body>
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<style></style>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
    
     <script type="text/javascript">
+
         $(document).ready(function () {
             $('.carousel').carousel();
         });
+
+
     </script>
 
 

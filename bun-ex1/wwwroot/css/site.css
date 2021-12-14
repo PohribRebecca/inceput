@@ -7,14 +7,16 @@ html {
     min-height: 100%;
     font-family: 'Red Hat Display', sans-serif;
 }
-
-
 .containerIndex {
-    height: 100vh;
-   background-image: url('https://images.pexels.com/photos/1495580/pexels-photo-1495580.jpeg?cs=srgb&dl=pexels-eric-anada-1495580.jpg&fm=jpg');
-    background-size: cover;
+    height: 50vh;
+    background-color: #9cd7f2;
 
+
+    background-size: cover;
 }
+
+
+
 @media (min-width: 1200px) and (max-width: 1300px) {
 
     .nav-link{
