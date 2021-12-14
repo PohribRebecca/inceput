@@ -13,12 +13,10 @@ body {
    justify-content:center;
 }
 .containerIndex .text {
-    color: #E6F4F1;
-    transition: 0.5s ease;
-   text-align: center;
-   cursor:default;
-
-  
+    color: #fffaff;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    cursor: default;
 }
 
     .containerIndex .text:hover {
@@ -148,18 +146,37 @@ body {
     }
 }
 .box {
-    background-color: white;
+    
     height: 10rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius:20
-    px;
+    box-shadow: #fffaff 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 20px;
 }
 .boxes {
-   
     display: grid;
     max-width: 100vw;
     margin: 0 auto;
     gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
-    
+    color: #c0d6df;
+    overflow:hidden;
 }
+    .boxes .box {
+        position: relative;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        background: #0077b6;
+        border-radius: 15px;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+
+    }
+.boxes .box:hover {
+        transform: translateY(-50px);
+        
+    }
+     

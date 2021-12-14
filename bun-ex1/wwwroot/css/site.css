@@ -7,11 +7,12 @@ html {
     min-height: 100%;
     font-family: 'Red Hat Display', sans-serif;
 }
+.containerBody {
+    background-color: #00b4d8;
+}
 .containerIndex {
     height: 50vh;
-    background-color: #9cd7f2;
-
-
+    background-color: #00b4d8;
     background-size: cover;
 }
 
@@ -20,7 +21,14 @@ html {
 @media (min-width: 1200px) and (max-width: 1300px) {
 
     .nav-link{
-        font-size:small;
+        font-size:10px;
+    }
+}
+
+
+@media (min-width: 1300px) and (max-width: 1560px){
+    .nav-link {
+        font-size: 15px;
     }
 }
 
