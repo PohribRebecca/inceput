@@ -5,15 +5,14 @@
 html {
     position: relative;
     min-height: 100%;
-    font-family: 'Red Hat Display', sans-serif;
+  
 }
 .containerBody {
     background-color: #00b4d8;
 }
 .containerIndex {
-    height: 50vh;
-    background-color: #00b4d8;
-    background-size: cover;
+    height: 100vh;
+    background-color: #c9e5f0;
 }
 
 
@@ -33,3 +32,15 @@ html {
 }
 
 
+@keyframes rotateY {
+    0% {
+        transform: rotateY(90deg)
+    }
+
+    80% {
+        transform: rotateY(-10deg)
+    }
+
+    100% {
+        transform: rotateY(0)
+    }
