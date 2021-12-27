@@ -16,10 +16,8 @@
 <body>
    
     <header style="   box-shadow:  #9fc8d6  0px 10px 50px;">
-          <nav class="navbar navbar-expand-xl navbar-light " style=" background-color:#E3E7F1;   font-size:large;">
-
+          <nav class="navbar navbar-expand-xl navbar-light " style=" background-color:white;   font-size:large;">
                 <a class="navbar-brand" href="#"><img  src="/Photos/chrosu logo transparent.png" alt="chorusLogo" id="logo" style=" width: 12vw; height:3vw;"/> </a>
-
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
                           <span class="navbar-toggler-icon"></span>
                 </button>
@@ -192,7 +190,7 @@
 $(document).ready(function(){
     $(".dropdown").hover(function(){
         var dropdownMenu = $(this).children(".dropdown-menu");
-        if(dropdownMenu.is(":visible")){
+        if(dropdownMenu.is(":visible")){ 
             dropdownMenu.parent().toggleClass("open");
         }
     });

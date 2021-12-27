@@ -33,8 +33,10 @@ body {
 
 .box {
     height: 7rem;
+   
     box-shadow: #9ecadb 0px 8px 24px, #2E8BC0 0px 16px 56px, #9ecadb 0px 24px 80px;
-    position: relative;
+    
+   
 }
 .boxes {
     display: grid;
@@ -42,8 +44,8 @@ body {
     gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
     color: white;
-    margin-top:4vh;
-   
+    margin-top: 4vh;
+    width: 60vw;
 }
     .boxes .box {
         position: relative;
@@ -56,7 +58,7 @@ body {
         transition: 0.5s;
         font-size: large;
     }
-        .boxes .box:hover {
+.boxes .box:hover {
             transform: translateY(+10px);
             box-shadow: #52688F 0px 30px 60px -12px, #52688F 0px 18px 36px -18px;
         }
